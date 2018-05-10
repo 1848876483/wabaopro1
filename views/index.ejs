@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/common.css">
+	<title><%= title %></title>
+</head>
+<body>
+	<div id="main">
+		<% if(userInfo){ %>
+			<div id="playBtn">
+				<a href="/play"></a>
+			</div>
+			<div id="infoBtn">
+				<a href="/info"></a>
+			</div>
+		<% }else{ %>
+			<div id="loginBtn">
+				<a href="/login"></a>	
+			</div>
+			<div id="regBtn">
+				<a href="/reg"></a>	
+			</div>
+		<% } %>
+	</div>
+</body>
+</html>

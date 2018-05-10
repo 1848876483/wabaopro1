@@ -1,0 +1,22 @@
+*{ margin:0; padding:0; }
+li{ list-style: none; }
+img{ display:block; }
+html,body{ width:100%; height: 100%; }
+html{ font-size: 20vw; }
+
+#main{ width:100%; height:100%; background: url('../images/index_bg.png') center; background-size:cover; }
+#loginBtn , #regBtn{ width:200px; height:48px; background-size: cover; position: absolute; left:50%; margin-left: -100px;}
+#loginBtn a , #regBtn a { display: block; width:100%; height:100%; }
+#loginBtn { background-image:url('../images/index_login.png'); bottom:150px;}
+#regBtn { background-image:url('../images/index_reg.png'); bottom: 50px;}
+
+#playBtn , #infoBtn{ width:200px; height:48px; background-size: cover; position: absolute; left:50%; margin-left: -100px;}
+#playBtn a , #infoBtn a { display: block; width:100%; height:100%; }
+#playBtn { background-image:url('../images/index_play.png'); bottom:150px;}
+#infoBtn { background-image:url('../images/index_info.png'); bottom: 50px;}
+
+#play{width:100%; height:100%; background: url('../images/play_bg.jpg') center; background-size:cover; overflow: hidden;}
+#play ul{ margin-top: 30px; }
+#play ul li{ width : 0.666667rem; height:0.666667rem; margin:0.28rem; background-size:cover; float : left;}
+#play ul .noSel{ background-image: url('../images/play_noSel.png'); }
+#play ul .sel{ background-image: url('../images/play_sel.png'); }

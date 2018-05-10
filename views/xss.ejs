@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+</head>
+<body>
+	欢迎：<%- username %> 来到这个网站
+	<img src="<%- imgurl %>">
+	<script>
+
+	var foo = "<%- detailid %>";	
+
+	</script>
+
+	<h2>留言板</h2>
+	
+	<form action="/aq/message" method="POST">
+		<img src="/aq/yzm" alt=""><br>
+		请输入验证码：<input type="text" name="yzmcontent"><br>
+		<input type="text" name="messagecontent">
+		<input type="submit" value="留言">
+	</form>
+	<ul>
+		<!-- <li>
+			<h3>xiaoming</h3>
+			<p>今天天气很好</p>
+		</li>
+		<li>
+			<h3>xiaoming</h3>
+			<p>今天天气很好</p>
+		</li> -->
+		<% messageData.forEach((item)=>{ %>
+		
+			<li>
+				<h3><%- item.messageuser %></h3>
+				<p><%- item.messagecontent %></p>
+			</li>
+
+		<% }) %>
+	</ul>
+
+</body>
+</html>
+
+
